@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato:wght@300&family=Lemon&family=Montserrat:wght@300&family=Open+Sans:ital,wght@0,300;1,600&family=Poppins:wght@200;300;500&family=Roboto:ital,wght@0,300;0,400;1,300;1,900&family=Rubik:wght@600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+html , body{
+    width: 100vw;
+    height: 100vh;
+}
+body{
+    background-color:#C9C9B6;
+}
+.logo img{
+    cursor: pointer;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    background-color: #F2F2F2;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+.icon{
+    display: flex;
+    margin-right:10rem;
+    gap: 0.3rem;
+}
+
+.icon i , .cross{
+    color: grey;
+    font-size: 1.3rem;
+}
+
+.icon i , .cross{
+    cursor: pointer;
+    position: relative;
+    padding: 0.5rem 0.5rem;
+    transition: background-color 0.3s;
+}
+
+.icon i:hover , .cross:hover{
+    background-color:lightblue;
+
+}
+.icon i:hover, .cross:hover {
+    background-color: lightblue;
+    transition: background-color 0.3s;  
+}
+
+.below-nav{
+    width: 100%;
+    padding: 0 1rem;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+    z-index: -1;
+    position:relative;
+    top: 60px;
+}
+.below-nav img{
+    width: 60px;
+    height: 30px;
+    cursor: pointer;
+}
+.below-nav i{
+    font-size:1.4rem;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+.below-nav i:hover{
+    color: red;
+}
+.hero{
+    width: 100vw;
+    height: 100vh;
+    padding: 3rem;
+}
+.side-div{
+    width:50vw;
+    height: 100vh;
+    background-color: #848475;
+    position: absolute;
+    left: 37rem;
+    top: 200px;
+    z-index:6;
+}
+.hero-img{
+    width:72vw;
+    z-index:10;
+    position:relative;
+    top: 180px;
+    display: flex;
+    margin: 0 auto;
+}
+
+
+.hero-img img{
+    width:70vw;
+    height: 80vh;
+}
+
+.three-divs{
+
+    display: flex;
+    position:relative;
+    top: 90px;
+    z-index: 20;
+    height: 24rem;
+    gap: 1.2rem;
+    padding: 0 5rem;
+}
+.three-divs div{
+    background-color: #FFFFFF;
+    width: 18rem;
+    height: 24rem;
+    padding: 2.5rem 1rem;
+    line-height: 2.2rem;
+    box-shadow: 3px 3px 5px grey;
+}
+.div h1{
+    color: #848475;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    text-wrap: nowrap;
+    margin-bottom: 2rem;
+ 
+}
+.div span{
+    color: #999999;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.more{
+    display:block;
+    font-weight:600;
+    width: 3rem;
+    margin-top: 1rem;
+    position: relative;
+    cursor: pointer;
+
+}
+.more::after{
+    content: "";
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    background-color: #848475;
+}
+.more:hover::after{
+background-color: black;
+
+}
+.FREEPIK{
+    margin-top:6.8rem;
+    margin-left: 4.8rem;
+}
+.freepik{
+    position: relative;
+    cursor: pointer;
+}
+.freepik:hover::after{
+   width: 0;
+}
+.freepik::after{
+    content: "";
+    height: 0.1px;
+    width: 100%;
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    right: 0;
+    background-color:#000000;
+}
+
+.footer{
+    height: 290px;
+    width: 100%;
+   background-color:#333333;
+   position:relative;
+   top: 510px;
+   padding: 3rem;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.footer p{
+    color: #FFFFFF;
+}
+.footer .span{
+    color:white;
+    margin-top:9rem;
+    font-size: 0.8rem;
+}
+.span span{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.span span:hover{
+    text-decoration: none;
+    color: grey;
+}
+
+.footer .para{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width:1140px){
+   
+html{
+    font-size: 85%;
+}   
+
+nav{
+    height: 60px;
+}
+
+}
+
+@media screen and (max-width:900px) {
+    
+    html{
+        font-size:73%;
+    }
+    
+    nav{
+        height: 60px;
+    }
+    
+}
+
+@media screen and (max-width:760px) {
+    html{
+        font-size:64%;
+    }
+    .footer{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:718px){
+    html{
+        font-size:60%;
+    }
+
+}
+
+@media screen and (max-width:700px){
+    html{
+        font-size:51%;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    html{
+        font-size:30%;
+    }
+    .icon{
+        display: none;
+    }
+
+    .logo img{
+        width: 90px;
+        height: 50px;
+    }
+    nav , .below-nav{
+        padding: 0 2rem;
+    }
+    .below-nav{
+        height: 60px;
+    }
+    .below-nav img{
+
+        width: 70px;
+    }
+    .below-nav i{
+        font-size:4rem;
+    }
+     .cross{
+        font-size: 5rem;
+    }
+    .hero img{
+        width:310px;
+        height: 310px;
+        position: relative;
+        left:-9rem;
+    }
+    .three-divs{
+       
+        flex-direction: column;
+        height: auto;
+        padding-left: 0;
+        position: relative;
+        left:-7px;
+        gap: 5rem;
+        
+    }
+    .three-divs div{
+
+        width: 270px;
+        height: 370px;
+        padding: 4rem;
+
+    }
+
+    .three-divs div h1{
+        font-size: 6rem;
+        margin-bottom: 7rem;
+        margin-top: 3rem;
+    }
+    .three-divs div .content{
+        font-size: 4rem;
+        line-height: 7rem;
+    }
+    .three-divs div .content .more{
+        font-size: 4rem;
+        margin-top: 5rem;
+        
+    }
+    .more::after{
+        width:55px;
+    }
+
+    .footer{
+        position: relative;
+        top: 200rem;
+        height: 250px;
+    }
+    .footer .para{
+        padding-top: 5rem;
+        font-size: 2.5rem;
+        text-wrap: nowrap;
+
+    }
+
+    .footer .span{
+        font-size: 2rem;
+        margin-top: 20rem;
+
+    }
+    .side-div{
+        height: 213vh;
+        width: 80vw;
+        left: 70px;
+    }
+
+    .FREEPIK{
+        position: relative;
+        bottom: 700rem;
+    }
+
+}
